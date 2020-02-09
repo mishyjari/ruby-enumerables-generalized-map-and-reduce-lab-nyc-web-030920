@@ -15,6 +15,7 @@ def reduce(arr,start=nil)
     output = start
   else
     output = nil
+  end
   while i < arr.length do
     output = yield(output,arr[i])
     i += 1
