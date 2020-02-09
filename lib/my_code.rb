@@ -13,7 +13,9 @@ def reduce(arr,start=0)
   output = start
   i = 0
   while i < arr.length do
-    if arr[i]
+    if !arr[i]
+      output = false
+    elsif arr[i]
       output += arr[i]
     else 
       output = false
