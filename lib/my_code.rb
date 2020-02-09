@@ -15,7 +15,7 @@ def reduce(arr,start=0)
   while i < arr.length do
     if yield(arr[i])
       output += arr[i]
-    elsis yield(!arr[i])
+    elsif yield(!arr[i])
       output = true
     else 
       output = false
