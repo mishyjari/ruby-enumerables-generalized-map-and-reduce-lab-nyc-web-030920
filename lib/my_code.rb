@@ -14,7 +14,7 @@ def reduce(arr,start=nil)
     output = start
     i = 0
   else 
-  #  output = arr[0]
+    output = arr[0]
     i = 0
   end
   while i < arr.length do
