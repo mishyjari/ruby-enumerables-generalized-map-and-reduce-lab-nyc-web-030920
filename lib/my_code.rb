@@ -10,6 +10,6 @@ def map(arr)
 end
 
 def reduce(arr,start=0)
-  output = yield(start)
+  output = yield
   output
 end
