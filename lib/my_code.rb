@@ -22,6 +22,7 @@ def reduce(arr,start=0)
     elsif !arr[i]
       output = false
     else
+      output = false
       break
     end
     i += 1
