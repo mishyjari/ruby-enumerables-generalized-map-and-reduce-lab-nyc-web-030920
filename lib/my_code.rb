@@ -16,6 +16,5 @@ def reduce(arr,start=0)
     output += arr[i]
     i += 1
   end
-  output = false if yield(!output)
   output
 end
