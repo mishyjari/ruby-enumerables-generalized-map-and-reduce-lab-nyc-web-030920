@@ -13,8 +13,6 @@ def reduce(arr,start=nil)
   i = 0
   if start 
     output = start
-  else
-    output = nil
   end
   while i < arr.length do
     output = yield(output,arr[i])
