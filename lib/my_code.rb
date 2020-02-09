@@ -16,7 +16,7 @@ def reduce(arr,start=0)
     if arr[i].is_a?(Integer)
       output += arr[i] 
     else
-      output = yield(arr[i])
+      output = yield(arr)
     end
     i += 1
   end
