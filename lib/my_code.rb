@@ -9,20 +9,14 @@ def map(arr)
   output
 end
 
-def reduce(arr,start=0)
+def reduce(arr,start=nil)
   i = 0
-  output = start
+  if start 
+    output = start
+  else
+    output = nil
   while i < arr.length do
-    if arr[i].is_a?(Integer)
-      output += arr[i] 
-    elsif yield(arr[i])
-      output = yield(arr[i])
-    elsif yield(arr)
-      output = yield(arr)
-    elsif yield(!arr[i])
-      output = false
-    
-    end
+    output = yield(output,arr[i])
     i += 1
   end
   output
