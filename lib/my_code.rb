@@ -15,8 +15,10 @@ def reduce(arr,start=0)
   while i < arr.length do
     if arr[i].is_a?(Integer)
       output += arr[i] 
+    elsif !arr[i]
+      output = yield(arr[i])
     else
-      output = yield(arr) || yield(arr[i])
+      output = yield(arr)
     end
     i += 1
   end
