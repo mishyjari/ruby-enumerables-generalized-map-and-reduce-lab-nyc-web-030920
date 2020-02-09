@@ -19,7 +19,7 @@ def reduce(arr,start=0)
       output = yield(arr[i])
     elsif yield(arr)
       output = yield(arr)
-    elsif yield(!arr[i])
+    elsif !arr[i]
       output = false
     end
     i += 1
