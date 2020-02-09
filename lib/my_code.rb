@@ -15,10 +15,11 @@ def reduce(arr,start=0)
   while i < arr.length do
     if arr[i]
       output += arr[i]
+      i += 1
     else 
       output = false
+      i = arr.length
     end
-    i += 1
   end
   output
 end
