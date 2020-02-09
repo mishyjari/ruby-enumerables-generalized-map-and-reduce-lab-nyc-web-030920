@@ -13,7 +13,7 @@ def reduce(arr,start=0)
   output = start
   i = 0
   while i < arr.length do
-    if arr[i].is_
+    if arr[i]
       output += arr[i]
     else 
       output = false
