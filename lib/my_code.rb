@@ -10,6 +10,10 @@ def map(arr)
 end
 
 def reduce(arr,start=0)
+  i = 0
+  while i < arr.length do
   output = yield(arr)
+  i += 1
+end
   output
 end
